@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Student Name — Academics & Activities</title>
+
+<!-- Basic SEO / Social -->
+<meta name="description" content="Student Name — high school student: academics, internships, volunteering, publications, and photos." />
+<link rel="canonical" href="https://your-username.github.io/" />
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Student Name — Academics & Activities" />
+<meta property="og:description" content="Portfolio showcasing academics, internships, community volunteering, publications, and photos." />
+<meta property="og:url" content="https://your-username.github.io/" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- Manifest-ish -->
+<meta name="theme-color" content="#0b7285">
+
+<!-- JSON-LD / structured data (edit fields) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Student Name",
+  "url": "https://your-username.github.io/",
+  "sameAs": [
+    "https://www.linkedin.com/in/your-profile",
+    "https://scholar.google.com/citations?user=..."
+  ],
+  "jobTitle": "High School Student",
+  "alumniOf": "Your High School Name"
+}
+</script>
+
+<style>
+  :root{
+    --bg:#0f1720; --card:#0b1220; --muted:#9aa4b2; --accent:#0ea5a5; --white:#f8fafc;
+    --maxw:1100px; --gap:1.25rem;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; color:var(--white); background:
+      radial-gradient(circle at 10% 10%, rgba(14,165,165,0.06), transparent 8%),
+      linear-gradient(180deg,#051124 0%, #071623 100%);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    padding:2rem;
+    display:flex; justify-content:center;
+    font-size:16px; line-height:1.45;
+  }
+  .wrap{max-width:var(--maxw); width:100%;}
+  header{display:flex; gap:var(--gap); align-items:center; margin-bottom:1rem;}
+  .avatar{
+    width:96px; height:96px; border-radius:12px; overflow:hidden; flex:0 0 96px;
+    box-shadow:0 6px 18px rgba(2,6,23,0.6); border:1px solid rgba(255,255,255,0.04);
+  }
+  .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+  .title{flex:1}
+  h1{margin:0;font-size:1.375rem}
+  p.lead{margin:.25rem 0 0;color:var(--muted)}
+  .top-actions{display:flex; gap:.5rem; align-items:center}
+  a.button{
+    display:inline-block;padding:.5rem .75rem;border-radius:8px;
+    background:linear-gradient(90deg,var(--accent),#06b6b6);
+    color:rgba(3,7,18,0.98); font-weight:600; text-decoration:none;
+    box-shadow:0 6px 18px rgba(11,89,89,0.12);
+  }
+  main{display:grid; grid-template-columns: 1fr 320px; gap:var(--gap); align-items:start;}
+  @media(max-width:880px){ main{grid-template-columns:1fr} .avatar{display:none} .top-actions{margin-top:.5rem} }
+  section.card{
+    background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border-radius:12px; padding:1rem; border:1px solid rgba(255,255,255,0.03);
+    box-shadow: 0 6px 24px rgba(2,6,23,0.6);
+  }
+  .meta{display:flex; gap:.75rem; flex-wrap:wrap; color:var(--muted); font-size:.9rem}
+  h2{margin:.25rem 0 0; font-size:1.05rem}
+  ul.simple{list-style:none;padding:0;margin:0;display:grid;gap:.6rem}
+  li.item{padding:.6rem;border-radius:8px;background:rgba(255,255,255,0.01);display:flex;justify-content:space-between;align-items:center}
+  .badge{font-size:.8rem;color:var(--muted)}
+  .section-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem}
+  @media(max-width:560px){ .section-grid{grid-template-columns:1fr} }
+  .photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem}
+  .photo-grid img{width:100%;height:90px;object-fit:cover;border-radius:8px}
+  /* keyboard focus */
+  a:focus, button:focus { outline:3px solid rgba(14,165,165,0.18); outline-offset:3px; }
+  /* print-friendly */
+  @media print{
+    body{background:white;color:black;padding:0}
+    header .avatar, .top-actions { display:none }
+    main{grid-template-columns:1fr}
+    section.card{box-shadow:none;border:none;background:transparent}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap" role="main">
+    <header>
+      <div class="avatar" aria-hidden="true">
+        <img src="images/avatar.jpg" alt="Student Name smiling portrait (replace with your photo)">
+      </div>
+      <div class="title">
+        <h1>Student Name</h1>
+        <p class="lead">High School • Class of 20XX — Interests: STEM, community service, science writing</p>
+        <div class="meta" aria-hidden="true">
+          <span>City, State</span>
+          <span>•</span>
+          <span>GPA: 4.0 (example)</span>
+        </div>
+      </div>
+
+      <div class="top-actions" role="toolbar" aria-label="Actions">
+        <a class="button" href="files/StudentName_Resume.pdf" download>Download Resume</a>
+        <a class="button" href="mailto:student@example.com?subject=Contact%20from%20website" style="background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--white);">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Left column: main content -->
+      <div>
+        <section class="card" aria-labelledby="academics">
+          <h2 id="academics">Academics</h2>
+          <p class="meta">Awards, relevant coursework, research projects</p>
+          <ul class="simple" style="margin-top:.6rem">
+            <li class="item">
+              <div>
+                <strong>AP Scholar with Distinction</strong><br>
+                <small class="badge">Year • High School Name</small>
+              </div>
+              <div class="badge">GPA 4.0</div>
+            </li>
+
+            <li class="item">
+              <div>
+                <strong>Independent Research: 'Project Title'</strong><br>
+                <small class="badge">Supervisor: Dr. Example • Topic: machine learning for ecology</small>
+              </div>
+              <div class="badge">Poster / Mentor</div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="card" aria-labelledby="internships" style="margin-top:.75rem">
+          <h2 id="internships">Internships & Work Experience</h2>
+          <p class="meta">Short descriptions, responsibilities, timeline</p>
+          <ul class="simple" style="margin-top:.6rem">
+            <li class="item">
+              <div>
+                <strong>Research Intern — Lab/Company Name</strong><br>
+                <small class="badge">Summer 20XX • Tasks: data collection, code, literature review</small>
+              </div>
+              <div class="badge">Hourly / Volunteer</div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="card" aria-labelledby="volunteer" style="margin-top:.75rem">
+          <h2 id="volunteer">Volunteering & Community</h2>
+          <p class="meta">Nonprofit, school clubs, public events</p>
+          <ul class="simple" style="margin-top:.6rem">
+            <li class="item">
+              <div>
+                <strong>STEM Outreach Volunteer</strong><br>
+                <small class="badge">Organization Name • Led workshops for middle schoolers</small>
+              </div>
+              <div class="badge">40+ hrs</div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="card" aria-labelledby="publications" style="margin-top:.75rem">
+          <h2 id="publications">Publications & Writing</h2>
+          <p class="meta">Conference posters, journals, blogs</p>
+          <ul class="simple" style="margin-top:.6rem">
+            <li class="item">
+              <div>
+                <strong>"Title of Article"</strong><br>
+                <small class="badge">Published in Example Journal / School Magazine — Year</small>
+              </div>
+              <div><a href="#" style="color:var(--accent)">Read</a></div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="card" aria-labelledby="photos" style="margin-top:.75rem">
+          <h2 id="photos">Photos</h2>
+          <p class="meta">Events, presentations, community work</p>
+          <div class="photo-grid" style="margin-top:.6rem">
+            <img src="images/photo1.jpg" alt="Photo description 1" loading="lazy">
+            <img src="images/photo2.jpg" alt="Photo description 2" loading="lazy">
+            <img src="images/photo3.jpg" alt="Photo description 3" loading="lazy">
+            <img src="images/photo4.jpg" alt="Photo description 4" loading="lazy">
+            <img src="images/photo5.jpg" alt="Photo description 5" loading="lazy">
+            <img src="images/photo6.jpg" alt="Photo description 6" loading="lazy">
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Right column: sidebar -->
+      <aside>
+        <section class="card" aria-labelledby="contact">
+          <h2 id="contact">Contact & Links</h2>
+          <p class="meta">Use safe contact channels — avoid publishing phone/address if under 18.</p>
+          <ul style="margin-top:.6rem">
+            <li style="margin-bottom:.5rem">
+              <strong>Email:</strong> <a href="mailto:student@example.com">student@example.com</a>
+            </li>
+            <li style="margin-bottom:.5rem">
+              <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">View profile</a>
+            </li>
+            <li style="margin-bottom:.5rem">
+              <strong>Google Scholar / Publications:</strong> <a href="#" target="_blank" rel="noopener">link</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="card" aria-labelledby="skills" style="margin-top:.75rem">
+          <h2 id="skills">Skills & Tools</h2>
+          <p class="meta">Languages, software, lab techniques</p>
+          <div style="margin-top:.6rem">
+            <div class="badge">Python • MATLAB • LaTeX</div><br>
+            <div class="badge">Git • Markdown • Excel</div>
+          </div>
+        </section>
+
+        <section class="card" aria-labelledby="press" style="margin-top:.75rem">
+          <h2 id="press">Press / Recognition</h2>
+          <p class="meta">Local news, awards</p>
+          <ul style="margin-top:.6rem">
+            <li><a href="#" target="_blank" rel="noopener">Local newspaper — feature on research</a></li>
+          </ul>
+        </section>
+      </aside>
+    </main>
+
+    <footer style="margin-top:1rem;color:var(--muted);font-size:.9rem;text-align:center">
+      <div>© <span id="year"></span> Student Name — site built with ?? • <a href="https://github.com/your-username" style="color:var(--muted)">GitHub</a></div>
+      <div style="margin-top:.25rem;color:var(--muted);font-size:.8rem">Privacy tip: do not share your full address or personal phone publicly if you are under 18.</div>
+    </footer>
+  </div>
+
+<script>
+  // small utilities
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Accessibility: ensure focus outline when tabbing
+  (function(){document.body.classList.remove('using-mouse');
+  window.addEventListener('mousedown', ()=>document.body.classList.add('using-mouse'));
+  window.addEventListener('keydown', (e)=>{ if(e.key==='Tab') document.body.classList.remove('using-mouse')});})();
+</script>
+</body>
+</html>
